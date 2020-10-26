@@ -1,14 +1,31 @@
-import pygame
+import pygameEr88Sistems-Simuladorimport pygame
+from random import randint
 pygame.init()
-x = 400
-y = 300
-velocidade = 10
-fundo = pygame.image.load('fundo.png') 
-carro = pygame.image.load('carro.png')
-carro2 = pygame.image.load('carro2.png')
 
-janela = pygame.display.set_mode((800,750))
-pygame.display.set_caption("Criando um jogo em Python")
+x = 500
+y = 300
+pos_x = 270
+pos_y = 800
+pos_y_a = 800
+pos_y_c = 800
+timer = 0
+second = 0
+velocidade = 20
+velo_trafego = 12
+
+fundo = pygame.image.load('fundo_estacionamento.png')
+carro = pygame.image.load('carro.png')
+car_azul = pygame.image.load('car_azul.png')
+carro_laranja = pygame.image.load('carro_laranja.png')
+police = pygame.image.load('police.png')
+
+font = pygame.font.SysFont('arial black',20)
+texto = font.render("Tempo: ",True,(255,255,255),(0,0,0))
+pos_texto = texto.get_rect()
+pos_texto.center = (60,50)
+
+janela = pygame.display.set_mode((800,700))
+pygame.display.set_caption("Simulador de manobra em Python")
 
 janela_aberta = True
 while janela_aberta:
@@ -26,9 +43,32 @@ while janela_aberta:
         y+= velocidade
     if comandos[pygame.K_LEFT]:
         x-= velocidade
+
     if comandos[pygame.K_RIGHT]:
         x+= velocidade
 
+    #Condição de acerto de manobra.
+    if((x + 800 > pos_x and y + -40 > pos_y)):
+        y = 1200
+
+    if ((x + 900 < pos_x and y + -820 < pos_y)):
+        y = 1200
+
+
+    if (pos_y <= -300) and (pos_y_a <= -180) and (pos_y_c <= -180):
+        pos_y = randint(800,1000)
+        pos_y_a = randint(1300,2000)
+        pos_y_c = randint(2300,3000)
+
+    if (timer <20):
+        timer += 1
+    else:
+        second += 1
+        texto = font.render("Tempo: "+str(second), True, (255,255,255),(0,0,0))
+        timer = 0
+    pos_y -= velo_trafego
+    pos_y_a -= velo_trafego +2
+    pos_y_c -= velo_trafego +10
 
     comandos2 = pygame.key.get_pressed()
     if comandos[pygame.K_w]:
@@ -42,7 +82,11 @@ while janela_aberta:
 
     janela.blit(fundo, (0,0))
     janela.blit(carro,(x,y))
-    #janela.bakhoot(carro2, (x, y))
+    janela.blit(car_azul,(pos_x -180,pos_y_c))
+    janela.blit(carro_laranja,(pos_x -90,pos_y_a +200))
+    janela.blit(police,(pos_x,pos_y -100))
+    janela.blit(texto,pos_texto,)
     pygame.display.update()
 
 pygame.quit()
+
