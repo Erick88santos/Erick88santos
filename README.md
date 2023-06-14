@@ -8,7 +8,18 @@ I have an analytical profile. I have very a huge desire of learn and contribute,
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=Erick88santos&show_icons=true&theme=dracula)
 
 
-## technology with <img align="center" alt="windows" src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"/> <img align="center" alt="macOs" src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white"/> <img align="center" alt="linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/> <img align="center" alt="ubunto" src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=whit"/>
+<img align="center" alt="windows" src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"/> <img align="center" alt="macOs" src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white"/> <img align="center" alt="linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/> <img align="center" alt="ubunto" src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=whit"/>
+
+
+<div  alt="linguagens"style="display: inline_block"></br>
+ 
+ <img align="center" alt="ORACLE" src="https://img.shields.io/badge/ORACLE-DD0031?style=for-the-badge&logo=oracle&logoColor=white"/>
+  <img align="center" alt="virtualbox" src="https://img.shields.io/badge/VIRTUALBOX-02569B?style=for-the-badge&logo=virtualbox&logoColor=white"/>
+   <img align="center" alt="sQl" src="https://img.shields.io/badge/SQL-00000F?style=for-the-badge&logo=sql&logoColor=white"/>
+  
+ <img align="center" alt="" src="https://img.shields.io/badge/PL/SQL-14354C?style=for-the-badge&logo=pl/sql&logoColor=white"/>
+  
+</div></br>
 
 
 <div  alt="linguagens"style="display: inline_block"></br>
