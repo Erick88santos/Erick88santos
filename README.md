@@ -1,5 +1,5 @@
 # Hi, I'm Erick 👋
-I am Developer with target at in Data Engine, understend for tecnology at in SQL and with Python. 
+I am Developer with target at in Data Engine and DATABASE, understend for tecnology at in SQL and with Python. 
 I have an analytical profile. I have very a huge desire of learn and contribute, in addition to meeting challenges..
 
 [![Linkedn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/erick-dos-santos-286795203)
